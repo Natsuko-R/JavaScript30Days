@@ -1,4 +1,4 @@
-<!-- https://leetcode.com/studyplan/30-days-of-javascript/ -->
+#### https://leetcode.com/studyplan/30-days-of-javascript/
 
 ### run index.ts file by using command :
 
