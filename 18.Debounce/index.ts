@@ -33,19 +33,19 @@ const fn = (...inputs: Inputs) => {
 
 
 // EXAMPLE 3
-const calls: Call[] = [
-    { t: 50, inputs: [1, 2] },
-    { t: 300, inputs: [3, 4] },
-    { t: 300, inputs: [5, 6] },
-];
-const debounceFn = debounce(fn, 150);
-// Explanation:
-// The 1st call is delayed by 150ms and ran at 200ms. The inputs were (1, 2).
-// The 2nd call is cancelled by the 3rd call
-// The 3rd call is delayed by 150ms and ran at 450ms. The inputs were (5, 6).
+// const calls: Call[] = [
+//     { t: 50, inputs: [1, 2] },
+//     { t: 300, inputs: [3, 4] },
+//     { t: 300, inputs: [5, 6] },
+// ];
+// const debounceFn = debounce(fn, 150);
+// // Explanation:
+// // The 1st call is delayed by 150ms and ran at 200ms. The inputs were (1, 2).
+// // The 2nd call is cancelled by the 3rd call
+// // The 3rd call is delayed by 150ms and ran at 450ms. The inputs were (5, 6).
 
 
-calls.forEach(call => setTimeout(() => {
-    debounceFn(...call.inputs)
-}, call.t));
+// calls.forEach(call => setTimeout(() => {
+//     debounceFn(...call.inputs)
+// }, call.t));
 
